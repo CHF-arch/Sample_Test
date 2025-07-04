@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { fetchBranches } from "../services/branch"
+import { API_BASE_URL } from "../config/api";
 
 export default function BranchList() {
     const [branches, setBranches] = useState([]);
@@ -11,7 +12,7 @@ export default function BranchList() {
     },[])
     const fetchBranches = () => {
         fetchBranches
-        .get(`http://localhost:56859/api/branches`)
+        .get(`${API_BASE_URL}/branches`)
         .then((branches) => {
             setBranches(branches.data);
             console.log(branches);
@@ -21,7 +22,9 @@ export default function BranchList() {
     return (
         <div>
             <ul>
-                {/* {branches.map(branches) => ( */}
+                {branches.map((branches) => (
+                    <li key={branches.id}>
+                ))}
                 
             </ul>
         </div>
