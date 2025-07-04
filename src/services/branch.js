@@ -9,3 +9,6 @@ export async function fetchBranches(){
     const result = await response.json();
     return result;
 }
+export async function postBranches(){
+        
+}

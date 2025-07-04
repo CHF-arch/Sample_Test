@@ -1,0 +1,27 @@
+body{
+    background-color: #ECEBDE;
+    text-align: center;
+}
+.list{
+    padding: 10px;
+    font-family:inherit;
+    font-size: 25px;
+    border: 10px solid #A59D84;
+    border-radius: 10px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+.input_text{
+    font-size: 25px;
+    border: 10px solid #A59D84;
+    border-radius: 10px;
+    margin-left: 490px;
+    margin-right: 450px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.inputs{
+    
+}
