@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { fetchBranches } from "../services/branch"
+import { createBranch, fetchBranches } from "../services/branch"
 import { API_BASE_URL } from "../config/api"
 import styles from "../styles/branch.module.css"
 
@@ -27,8 +27,7 @@ export default function BranchList() {
     }
     if(isLoading) return <div>Loading Branches...</div>
     function addBranch() {
-        // const newBranch = window.prompt("Add a new branch", branchToAdd.Title, branchToAdd.Code)
-        if (branchCode.trim === '' && branchTitle === ''){
+        if (branchCode.trim() === '' && branchTitle.trim() === ''){
             return;
         }
         const newBranch = {
@@ -40,9 +39,11 @@ export default function BranchList() {
         setBranchTitle('');
         
     }
+   
     const handleAdd = (e) => {
         e.preventDefault();
         addBranch();
+        const data = createBranch(branchTitle, branchCode)
     };
 
     return (
