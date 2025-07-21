@@ -1,27 +1,106 @@
-body{
-    background-color: #ECEBDE;
-    text-align: center;
+body {
+  background-color: #ecebde;
+  text-align: center;
 }
-.list{
-    padding: 10px;
-    font-family:inherit;
-    font-size: 25px;
-    border: 10px solid #A59D84;
-    border-radius: 10px;
-    margin-left: 450px;
-    margin-right: 450px;
-    margin-bottom: 30px;
-    list-style-type: none;
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.input_text{
-    font-size: 25px;
-    border: 10px solid #A59D84;
-    border-radius: 10px;
-    margin-left: 490px;
-    margin-right: 450px;
-    margin-bottom: 30px;
-    padding: 10px;
+
+.list {
+  padding: 10px;
+  font-family: inherit;
+  font-size: 25px;
+  border: 10px solid #a59d84;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  width: 50vw;
 }
-/* .inputs{
-    
-} */
+.input_text {
+  font-size: 25px;
+  border: 10px solid #a59d84;
+  border-radius: 10px;
+}
+.inputs {
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+}
+.add {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+}
+.add:hover {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+  background-color: #a59d84;
+  color: white;
+  cursor: pointer;
+}
+.update {
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+}
+.delete {
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 15px;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+}
+.delete:hover {
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 15px;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+  background-color: #a59d84;
+  color: white;
+  cursor: pointer;
+}
+.update:hover {
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+  background-color: #a59d84;
+  color: white;
+  cursor: pointer;
+}
+.formContainer {
+  font-family: inherit;
+  font-size: 25px;
+  /* border: 10px solid #A59D84;
+    border-radius: 10px; */
+  margin-bottom: 30px;
+  list-style-type: none;
+  width: 40vw;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .list {
+    width: 80vw;
+  }
+  .formContainer {
+    width: 80vw;
+  }
+}

@@ -1,0 +1,85 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.editForm {
+  font-family: inherit;
+  font-size: 25px;
+  border: 10px solid #a59d84;
+  background-color: #ecebde;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  width: 60vw;
+  top: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.editInputs {
+  margin: 10px;
+  padding: 10px;
+  padding-right: 50px;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+}
+.editButtons {
+  font-size: 15px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+}
+.editButtons:hover {
+  border: 5px solid #a59d84;
+  border-radius: 10px;
+  background-color: #a59d84;
+  color: white;
+  cursor: pointer;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inputTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .editInputs {
+    width: 20vw;
+  }
+  .editButtons {
+    width: 25vw;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputContainer {
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
